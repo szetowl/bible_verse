@@ -1,0 +1,43 @@
+
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css); 
+
+html body {font-family: 'Noto Sans TC'; margin: 0; padding: 0px; background-color:white;}
+.mdl-layout__content{background-color:rgb(218, 218, 230);}
+h4 {
+  font-family: 'Noto Sans TC';
+  font-size:24px;
+  color:blueviolet;
+  font-weight: 400;
+  margin-left: 0px; 
+}
+
+h3 {
+  font-family: 'Noto Sans TC';
+  font-size:24px;
+  font-weight: 200;
+}
+
+h2 {
+  font-family: 'Noto Sans TC';
+  font-size:24px;
+  font-weight: 400;
+  color:rgb(27, 4, 48);
+}
+
+.mdl-layout__title {font-family: 'Noto Sans TC'; font-size:24px;}
+
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 150px;
+  background: url('../assets/welcome_card.jpg') center / cover;
+}
+.mdl-demo .mdl-card {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.mdl-demo section.section--center {
+  max-width: 860px;
+}
+
+

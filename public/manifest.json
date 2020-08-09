@@ -1,0 +1,31 @@
+{
+    "name": "靈修時刻",
+    "short_name": "靈修時刻",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "purple",
+    "theme_color": "grey",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/assets/icons/icon-72.png",
+            "type": "image/png",
+            "sizes":"72x72"
+        },
+        {
+            "src": "/assets/icons/icon-96.png",
+            "type": "image/png",
+            "sizes":"96x96"
+        },
+        {
+            "src": "/assets/icons/icon-256.png",
+            "type": "image/png",
+            "sizes":"256x256"
+        },
+        {
+            "src": "/assets/icons/icon-512.png",
+            "type": "image/png",
+            "sizes":"512x512"
+        }
+    ]
+}
