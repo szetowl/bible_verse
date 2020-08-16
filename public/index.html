@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="grey"/>
+  <meta name="theme-color" content="grey" />
   <title>靈修時刻</title>
 
   <!-- Material Design Lite -->
@@ -20,18 +20,6 @@
   <link rel="stylesheet" href="styles\index.css">
   <link rel="manifest" href="\manifest.json">
   <link rel="apple-touch-icon" href="\assets\icons\icon-192.png">
-  <style>
-    #play_audio {
-      margin-right: 30px;
-      margin-bottom: 30px;
-      width: 80px;
-      height: 80px;
-      min-width: initial;
-    }
-    .material-icons.md-60{font-size:60px ;margin-right:10px;}
-   
-  </style>
-
 
 
 <body class="mdl-demo  mdl-base">
@@ -40,34 +28,48 @@
     <header class="mdl-layout__header ">
       <!-- Header -->
       <div class="mdl-layout__header-row">
-        <div class="mdl-layout_title">
-          <h3>靈修時刻</h3>
+        <button style="display:none;" id="back-btn" class="mdl-button mdl-js-button">
+          <i class="material-icons header-md-36">arrow_back</i></button>
+        <button id="home-btn" class="mdl-button mdl-js-button">
+          <i class="material-icons header-md-36">home</i></button>
+        <div>
+          <h3 style="text-align:right;">靈修時刻</h3>
         </div>
         <div class="mdl-layout-spacer"></div>
-        <div class="mdl-layout-icon material-icons">menu</div>
+        <button id="next-btn" class="mdl-button mdl-js-button">
+          <i class="material-icons header-md-36">arrow_forward</i></button>
       </div>
+
     </header>
 
+
     <main class="mdl-layout__content">
-      <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-        <div class="demo-card-wide mdl-card mdl-cell mdl-cell--12-col mdl-shadow--4dp">
+      <section class="section--center mdl-grid mdl-grid--no-spacing">
+        <div id="current-verse-card" class="demo-card-wide mdl-card mdl-cell mdl-cell--12-col">
           <div class="mdl-card__title">
-            <h4 class="mdl-card__title-text" id="date_string"></h4>
+            <h3 class="mdl-card__title-text" id="date_string"></h3>
           </div>
 
           <div class="mdl-card__supporting-text">
-            <h2>聖經金句</h2>
-            <h4 id="verse-content"></h4>
             <h2 id="verse-content2"></h2>
+            <h4 id="verse-content"></h4>
           </div>
-
-          <button id="play_audio"
-            class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
-            <i class="material-icons md-60">play_arrow</i>
-          </button>
         </div>
+
+
+
       </section>
     </main>
+    <footer class="mdl-mini-footer mdl-color--primary">
+      <div class="mdl-mini-footer__left-section">
+        <h3 id="verse-author"></h3>
+      </div>
+      <div class="mdl-mini-footer__right-section">
+
+        <button id="play_audio" class="footer-mdl-button mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+          <i class="material-icons footer-md-36">play_arrow</i></button>
+      </div>
+    </footer>
   </div>
 
   <!--Add the Firebase and Cloud Firestore libraries-->

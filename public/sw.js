@@ -1,18 +1,18 @@
 const staticFilesToCache = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/assets/welcome_card.jpg',
+ /* '/',
+  '/index.html', 
   '/scripts/app.js',
   '/scripts/main.js',
-  '/scripts/firebase-code.js',
   '/styles/index.css',
+  '/manifest.json',*/
+  '/assets/welcome_card.jpg',
+  '/scripts/firebase-code.js',
   'https://fonts.googleapis.com/icon?family=Material+Icons',
   'https://fonts.googleapis.com/earlyaccess/notosanstc.css'
 ];
 
-const staticCacheName = 'static-cache-v3';
-const dynamicCache = 'dynamic-cache-v3';
+const staticCacheName = 'static-cache-v1';
+const dynamicCache = 'dynamic-cache-v1';
 
 const limitCacheSize = (name, size) => {
   caches.open(name).then(cache => {
@@ -35,6 +35,7 @@ self.addEventListener('install', event => {
   );
 });
 
+/*
 self.addEventListener('activate', function (event) {
   // Perform some task
   console.log('Service worker activating...');
@@ -47,7 +48,9 @@ self.addEventListener('activate', function (event) {
     })
   );
 });
+*/
 
+/*
 self.addEventListener('fetch', event => {
   if (event.request.url.indexOf('firestore.googleapis.com') === -1) {
     //console.log('Fetching:', event.request.url);
@@ -78,3 +81,4 @@ self.addEventListener('fetch', event => {
     );
   }
 });
+*/

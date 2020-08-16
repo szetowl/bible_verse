@@ -2,19 +2,21 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css); 
 
 html body {font-family: 'Noto Sans TC'; margin: 0; padding: 0px; background-color:white;}
-.mdl-layout__content{background-color:rgb(218, 218, 230);}
+.mdl-layout__content{background-color:white;}
 h4 {
   font-family: 'Noto Sans TC';
   font-size:24px;
   color:blueviolet;
   font-weight: 400;
-  margin-left: 0px; 
+  margin: 12px 0px;
 }
 
 h3 {
   font-family: 'Noto Sans TC';
   font-size:24px;
-  font-weight: 200;
+  color:white;
+  font-weight: 400;
+  margin-left: 16px
 }
 
 h2 {
@@ -22,22 +24,46 @@ h2 {
   font-size:24px;
   font-weight: 400;
   color:rgb(27, 4, 48);
+  margin: 12px 0px;
 }
 
-.mdl-layout__title {font-family: 'Noto Sans TC'; font-size:24px;}
+.mdl-layout__header-row{padding:0;}
+
 
 .demo-card-wide > .mdl-card__title {
   color: #fff;
   height: 150px;
   background: url('../assets/welcome_card.jpg') center / cover;
-}
+  align-items: left;
+  }
 .mdl-demo .mdl-card {
-  height: auto;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
 .mdl-demo section.section--center {
   max-width: 860px;
+}
+.mdl-card__title-text{align-items: left;}
+
+.material-icons.material-icons.header-md-36 { font-size: 36px; color:white}
+.material-icons.material-icons.footer-md-36 { font-size: 36px; color:blueviolet }
+
+
+.mdl-mini-footer 
+{
+  padding: 0px 0px;
+height: 100px;
+}
+.footer-mdl-button {
+  margin-right: 16px;
+  margin-top: 16px;
+  width: 60px;
+  height: 60px;
+}
+.mdl-button--fab.mdl-button--colored
+{
+  background-color: white;
 }
 
 
