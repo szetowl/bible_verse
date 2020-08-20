@@ -1,18 +1,19 @@
 const staticFilesToCache = [
- /* '/',
-  '/index.html', 
+  '/',
+  '/index.html',
   '/scripts/app.js',
   '/scripts/main.js',
   '/styles/index.css',
-  '/manifest.json',*/
+  '/manifest.json',
   '/assets/welcome_card.jpg',
+  '/assets/icons/icon-256.png',
   '/scripts/firebase-code.js',
   'https://fonts.googleapis.com/icon?family=Material+Icons',
   'https://fonts.googleapis.com/earlyaccess/notosanstc.css'
 ];
 
-const staticCacheName = 'static-cache-v1';
-const dynamicCache = 'dynamic-cache-v1';
+const staticCacheName = 'static-cache-v7';
+const dynamicCache = 'dynamic-cache-v7';
 
 const limitCacheSize = (name, size) => {
   caches.open(name).then(cache => {
@@ -23,6 +24,7 @@ const limitCacheSize = (name, size) => {
     })
   })
 }
+//install service worker
 self.addEventListener('install', event => {
   console.log('Attempting to install service worker and cache static assets');
   event.waitUntil(
@@ -35,7 +37,7 @@ self.addEventListener('install', event => {
   );
 });
 
-/*
+// activate event
 self.addEventListener('activate', function (event) {
   // Perform some task
   console.log('Service worker activating...');
@@ -48,9 +50,9 @@ self.addEventListener('activate', function (event) {
     })
   );
 });
-*/
 
-/*
+
+// fetch event  Listen and respond
 self.addEventListener('fetch', event => {
   if (event.request.url.indexOf('firestore.googleapis.com') === -1) {
     //console.log('Fetching:', event.request.url);
@@ -70,9 +72,6 @@ self.addEventListener('fetch', event => {
               return fetchRes;
             })
           });
-
-          // TODO 4 - Add fetched files to the cache
-
         }).catch(error => {
 
           // TODO 6 - Respond with custom offline page
@@ -81,4 +80,3 @@ self.addEventListener('fetch', event => {
     );
   }
 });
-*/

@@ -43,7 +43,7 @@
                 <div id="item-card" class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col 
          mdl-cell--6-col-tablet mdl-cell--6-col-desktop">
                     <div style="background-color:blanchedalmond; border-bottom-color:black;border-style: solid;">
-                        <h4 style="margin-left: 12px;">聖經金句</h4>
+                        <h4 style="margin-left: 12px;">靈修時刻 (資料輸入)</h4>
                     </div>
                     <div class="mdl-card__supporting-text">
 
@@ -56,15 +56,19 @@
                             <div class="mdl-textfield mdl-js-textfield ">
                                 <input class="mdl-textfield__input" type="text" id="verse_content" required>
                             </div>
-                            <h4>來源</h4>
+                            <h4>章節</h4>
                             <div class="mdl-textfield mdl-js-textfield ">
                                 <input class="mdl-textfield__input" type="text" id="verse_source" required>
                             </div>
-                            <h4>聲音演出</h4>
+                            <h4>聲音</h4>
                             <div class="mdl-textfield mdl-js-textfield ">
                                 <input class="mdl-textfield__input" type="text" id="verse_author">
                             </div>
-                            <h4>檔案</h4>
+                            <h4>發佈日期</h4>
+                            <div class="mdl-textfield mdl-js-textfield ">
+                                <input class="mdl-textfield__input" type="date"  id="publish_date" requried>
+                            </div>
+                            <h4>音樂檔案</h4>
                             <div class="mdl-textfield mdl-js-textfield ">
                                 <input id="audio_capture" type="file" accept="audio/*" capture="">
                             </div>
@@ -90,13 +94,12 @@
                 </div>
 
                 <!-- Item Input container --mdl-card 2------------------------------------------------->
-                <div id="item-card" class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col 
-                 mdl-cell--6-col-tablet mdl-cell--6-col-desktop">
+                <div id="item-card" class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--6-col-desktop">
                     <div style="background-color:blanchedalmond;border-style: solid; border-bottom-color:black;">
-                        <h4 style="margin-left: 12px;">聖經金句</h4>
+                        <h4 style="margin-left: 12px;">靈修時刻 (輸入後 按F5重新載入)</h4>
                     </div>
                     <div class="mdl-card__supporting-text">
-                        <h4 id="verse_total">ALL VERSES</h4>
+                        <h4>最近十項輸入資料</h4>
                         <h4 id="verse_contents"></h4>
 
                     </div>

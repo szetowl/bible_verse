@@ -33,7 +33,7 @@
         <button id="home-btn" class="mdl-button mdl-js-button">
           <i class="material-icons header-md-36">home</i></button>
         <div>
-          <h3 style="text-align:right;">靈修時刻</h3>
+          <h3 style="margin-left:0px" id="header-title">靈修時刻</h3>
         </div>
         <div class="mdl-layout-spacer"></div>
         <button id="next-btn" class="mdl-button mdl-js-button">
@@ -47,7 +47,9 @@
       <section class="section--center mdl-grid mdl-grid--no-spacing">
         <div id="current-verse-card" class="demo-card-wide mdl-card mdl-cell mdl-cell--12-col">
           <div class="mdl-card__title">
-            <h3 class="mdl-card__title-text" id="date_string"></h3>
+            <span class="mdl-card__title-text" id="verse-title"></span>
+            <div class="mdl-layout-spacer"></div>
+            <span class="mdl-card__title-text" id="verse-title-right"></span>
           </div>
 
           <div class="mdl-card__supporting-text">
